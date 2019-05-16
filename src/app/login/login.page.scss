@@ -1,0 +1,107 @@
+
+
+/**Utilidades**/
+.btn{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d6346b+0,1b0141+100&0.67+0,0.67+100 */
+    background: -moz-linear-gradient(-45deg,  rgba(214,52,107,0.67) 0%, rgba(27,1,65,0.67) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(214,52,107,0.67) 0%,rgba(27,1,65,0.67) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(214,52,107,0.67) 0%,rgba(27,1,65,0.67) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abd6346b', endColorstr='#ab1b0141',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+    margin: 20px auto 0px auto;
+    font-size: 16pt; 
+    }
+    
+    
+    .btnFacebook{
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0071bc+0,1b0141+100&0.7+0,0.7+100 */
+    background: -moz-linear-gradient(-45deg,  rgba(0,113,188,0.7) 0%, rgba(27,1,65,0.7) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(0,113,188,0.7) 0%,rgba(27,1,65,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(0,113,188,0.7) 0%,rgba(27,1,65,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b30071bc', endColorstr='#b31b0141',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    
+        margin: 20px auto 50px auto; 
+        font-size:10pt;
+    }
+    
+    /**Globales**/
+    
+    a{
+        color: #D6346B;
+    }
+    
+    label{
+        color: #e3e3e3;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+    
+    .centrar{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .registro{
+        --background: url('../../assets/FondoRegister.jpg');
+    }
+    
+    
+    /***************************************************************/
+    
+    /**content**/
+    ion-content{
+    
+        --background: url('../../assets/FondoLogin.jpg')no-repeat 50% 10%;
+        --background-size: cover;
+    
+    }
+      
+    .logo{
+        display: block;
+        padding: 0px 40px 0px 40px;
+        height: 250px;
+        width: 100%;
+    }
+    
+    .transparencia{
+        background: inherit;
+        background-color: transparent; 
+        color: rgba(255,255,255,0.85);
+        padding: 10px;
+        display: block;
+        width: 100%;
+        border: none;
+        border-bottom: #e3e3e3;
+    }
+    
+    .ref{
+        color:#e3e3e3e3;
+    }
+    
+    
+    .buttonEntrar{
+        height: 40px;
+        color: #e3e3e3;
+        width: 250px;
+        border-radius: 57px;
+    }
+    
+    .formType {
+        margin-left: 50px;
+        margin-right: 50px;
+        display:block;
+    
+    } 
+    
+    
+    
+    .cuentas{
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .contrasenia{
+        font-size: 16px;
+        margin-top: 10px;
+    }

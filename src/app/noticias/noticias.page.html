@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="dark" >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <div class="ban">
+    <ion-title text-center> Noticias
+      <img class="banner" src="../../assets/uvmradio.jpg">
+    </ion-title>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  
+
+  <ion-list *ngFor="let p of newNews">
+    <ion-card>
+        <ion-card-header>
+          <ion-card-title>{{p.pageTitle}}</ion-card-title>
+        </ion-card-header>
+        <img  src="{{p.primaryImage}}">
+        <ion-card-content>
+          <div [innerHtml]="p.content"></div>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+    
+    
+</ion-content>

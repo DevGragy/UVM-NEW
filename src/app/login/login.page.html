@@ -1,0 +1,66 @@
+<ion-content  [ngClass]="{'registro ': operation === 'register'}">
+  
+
+  <img  class= "logo" src="../../assets/img/logo_uvmradio.png">
+
+  <div class="centrar">
+    <button *ngIf="operation === 'login'" class="btnFacebook buttonEntrar">¡Ingresar con Facebook!</button>
+  </div>
+
+  <div class="centrar">
+      <button *ngIf="operation === 'register'" class="btnFacebook buttonEntrar">¡Registrate con Facebook!</button>
+    </div>
+
+
+  <form class="centrar formType" *ngIf="operation === 'login'">  
+
+    <label class = "centrar " >@Correo Electronico</label>  
+    <input class="transparencia " placeholder="correo.ejemplo@myuvm.edu.mx" type="text" [(ngModel)]="email" name="email" >
+
+
+    <label class = "centrar ">Contraseña</label>  
+    <input class="transparencia "  placeholder=".........." type="password" [(ngModel)]="password" name="password" >
+
+  </form>
+
+
+  <form class="centrar formType" *ngIf="operation === 'register'">  
+
+
+      <label class="centrar">Usuarios</label>  
+      <input class="transparencia" type="text" placeholder = "JoseCarlos19">
+  
+  
+      <label class="centrar">Nombre(s)</label>  
+      <input class="transparencia" type="password"  placeholder = "Jose Carlo">
+
+      <label class="centrar">Apellidos</label>  
+      <input class="transparencia" type="password"  placeholder = "Gutierrez Robles">
+
+      <label class="centrar">@Correo Electronico</label>  
+      <input class="transparencia" type="password" placeholder = "correo.ejemplo@mmyuvm.edu.mx"> 
+      
+      <label class="centrar">Contraseña</label>  
+      <input class="transparencia" type="password" placeholder = "............."> 
+
+      <label class="centrar">Confirmar Contraseña</label>  
+      <input class="transparencia" type="password" placeholder = "............."> 
+  
+  
+    </form>
+  
+
+      <button *ngIf="operation === 'login'" (click)= "onSubmit()" class="btn buttonEntrar centrar" >entrar ➜</button>
+      <button *ngIf="operation === 'register'" class="btn buttonEntrar centrar" >Registrarse </button>
+      <label class="centrar contrasenia">Olvidaste tu contraseña?</label><br/>  
+    
+
+    
+
+    <div class="centrar cuentas">
+      <span class="ref" *ngIf="operation === 'register'">Ya tienes cuenta? <a (click)="operation = 'login'"><b>Haz Click Aquí</b></a></span>
+      <span class="ref" *ngIf="operation === 'login'">Aun no tienes cuenta? <a (click)="operation = 'register'"><b>Click Aquí</b></a></span>
+    </div>
+
+
+</ion-content>

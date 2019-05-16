@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar color="dark" >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <div class="ban">
+    <ion-title text-center> Video Podcast
+      <img class="banner" src="../../assets/uvmradio.jpg">
+    </ion-title>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+      <ion-slides pager="true" [options]="slideOpts" >
+          <ion-slide *ngFor="let image of ImagenesSlider">
+           <img class="image" src="{{image.image}}" height="100" width="800"> 
+          </ion-slide>
+        </ion-slides>
+
+  <div class="containervideo">
+
+  <ion-slides pager="true" [options]="slideOpts">
+
+    <ion-slide>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Lorem ipsum</ion-card-subtitle>
+          <ion-card-title>Video 1 UVMRadio</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content class="content" >
+          
+            <video src="../../assets/videos/Historia UVM.mp4"  controls >
+              Tu navegador no implementa el elemento <code>video</code>.
+            </video>
+
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci felis, gravida ac egestas id, malesuada sit amet ipsum.
+        </ion-card-content>
+      </ion-card>
+  </ion-slide>
+
+  
+  <ion-slide>
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Lorem ipsum</ion-card-subtitle>
+          <ion-card-title>Video 2 UVMRadio</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content class="content" >
+          
+            <video src="../../assets/videos/UVM - Vida estudiantil.mp4"  controls >
+              Tu navegador no implementa el elemento <code>video</code>.
+            </video>
+
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus orci felis, gravida ac egestas id, malesuada sit amet ipsum.
+        </ion-card-content>
+      </ion-card>
+  </ion-slide>
+
+  </ion-slides>
+
+
+  </div>
+
+</ion-content>

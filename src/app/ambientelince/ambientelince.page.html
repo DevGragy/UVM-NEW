@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar color="dark" >
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <div class="ban">
+    <ion-title text-center> Programas
+      <img class="banner" src="../../assets/uvmradio.jpg">
+    </ion-title>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <img src="../../assets/slider/IMG_3339.jpg">
+
+  <ion-list>
+    <ion-item (click)="gotoDeportes()">
+        <ion-icon name="american-football" slot="start"></ion-icon>
+      <ion-label>Deportes</ion-label>
+    </ion-item>
+    <ion-item (click)="gotoAculturales()">
+        <ion-icon name="medal" slot="start"></ion-icon>
+      <ion-label>Actividades culturales</ion-label>
+    </ion-item>
+    <ion-item (click)="gotoEventos()">
+        <ion-icon name="calendar" slot="start"></ion-icon>
+      <ion-label>Eventos</ion-label>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
